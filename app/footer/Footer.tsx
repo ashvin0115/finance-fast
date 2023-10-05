@@ -1,8 +1,9 @@
 import React from "react";
+import Image from 'next/image'
 
 const Footer = () => {
   return(
-    <div className="flex flex-col pt-[54px] pb-[48px] lg:py-[72px]">
+    <div className="flex flex-col pt-[54px] pb-[48px] lg:py-[72px] mt-[100px]">
       <div className="bg-[#F9F9F9] mb-[40px] flex flex-col lg:flex-row lg:mb-[54px] px-[6%] py-[72px]">
         <div className="flex flex-row w-full lg:w-2/3">
           <div className="w-full lg:w-1/3 lg:mr-[72px]">
@@ -26,12 +27,12 @@ const Footer = () => {
             </div>
         </div>
       </div>
-      <div className="flex flex-col justify-between lg:flex-row">
+      <div className="flex flex-col justify-between lg:flex-row px-[6%]">
         <div className="flex flex-row justify-start mb-[24px]">
-          <img className="w-[24px] h-[24px] mr-[40px]" src="/assets/images/icons/ph_instagram-logo-fill.png" />
-          <img className="w-[24px] h-[24px] mr-[40px]" src="/assets/images/icons/mdi_twitter.png" />
-          <img className="w-[24px] h-[24px] mr-[40px]" src="/assets/images/icons/ic_baseline-tiktok.png" />
-          <img className="w-[24px] h-[24px] mr-[40px]" src="/assets/images/icons/carbon_logo-youtube.png" />
+          <Image className="mr-[40px]" src="/assets/images/icons/ph_instagram-logo-fill.png" width={24} height={24} alt='' />
+          <Image className="mr-[40px]" src="/assets/images/icons/mdi_twitter.png" width={24} height={24} alt='' />
+          <Image className="mr-[40px]" src="/assets/images/icons/ic_baseline-tiktok.png" width={24} height={24} alt='' />
+          <Image className="mr-[40px]" src="/assets/images/icons/carbon_logo-youtube.png" width={24} height={24} alt='' />
         </div>
         <div className="text-[#000] font-satoshi text-[14px] font-[400]">
           © 2023, FinanaceFast All Rights Reserved.
