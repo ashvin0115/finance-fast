@@ -5,7 +5,7 @@ const NavBar = () => {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
 		<>
-			<nav className="relative py-3 mb-3">
+			<nav className="relative py-[48px] mb-3 px-[6%]">
 				<div className="w-full flex flex-col lg:flex-row">
 					<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 						<div className="flex flex-row items-center">
@@ -23,7 +23,7 @@ const NavBar = () => {
 							onClick={() => setNavbarOpen(!navbarOpen)}
 						>
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-								<path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+								<path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#0F172A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 							</svg>
 						</button>
 					</div>

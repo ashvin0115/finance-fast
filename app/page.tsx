@@ -1,12 +1,8 @@
-import Image from 'next/image'
-import NavBar from './navbar/NavBar'
-import Footer from './footer/Footer'
-
+// import Image from 'next/image'
 export default function Home() {
   return (
-    <div className='px-[6%] bg-[#F9F9F9]'>
-      <NavBar />
-      <Footer />
+    <div className='px-[6%] bg-[#FFF]'>
+
     </div>
   )
 }
