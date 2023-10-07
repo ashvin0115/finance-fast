@@ -5,8 +5,31 @@ import Image from 'next/image'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
+import VerticalCarousel from './components/VerticalCarousel';
+
 export default function Home() {
   const [value, setValue] = useState('');
+
+  const lists = [
+    "path/to/image1.jpg",
+    "path/to/image2.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+    "path/to/image3.jpg",
+  ];
 
   return (
     <div className='bg-[#FFF]'>
@@ -63,7 +86,7 @@ export default function Home() {
       </div>
 
       <div className='mt-[7rem] px-[6%]'>
-
+        <VerticalCarousel lists={lists} />
       </div>
 
     </div>
