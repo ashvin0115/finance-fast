@@ -12,23 +12,23 @@ export default function Home() {
 
   const lists = [
     "path/to/image1.jpg",
-    "path/to/image2.jpg",
+    "path/to/image2222222.jpg",
     "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
-    "path/to/image3.jpg",
+    "path/to/image4.jpg",
+    "path/to/image5.jpg",
+    "path/to/image6.jpg",
+    "path/to/image7.jpg",
+    "path/to/image8.jpg",
+    "path/to/image9.jpg",
+    "path/to/image10.jpg",
+    "path/to/image11.jpg",
+    "path/to/image12.jpg",
+    "path/to/image13.jpg",
+    "path/to/image14.jpg",
+    "path/to/image15.jpg",
+    "path/to/image16.jpg",
+    "path/to/image17.jpg",
+    "path/to/image18.jpg",
   ];
 
   return (
@@ -74,7 +74,6 @@ export default function Home() {
       <div className='h-[9.6875rem] bg-[#E5DBFB] px-[6%]'>
         
       </div>
-
       <div className='mt-[7rem] px-[6%]'>
         <p className='font-satoshi font-[700] font-[.875rem] leading-normal bg-gradient-to-r from-[#6364FF] from-[64.58%] to-[#563ACC] to-[100%] text-transparent bg-clip-text text-center'>Cross-Border Transactions</p>
         <p className="font-satoshi text-[#1A1A1A] text-[2.5rem] font-[700] leading-[3rem] w-[37.5rem] text-center mx-auto mt-4">
@@ -85,8 +84,24 @@ export default function Home() {
         </p>
       </div>
 
-      <div className='mt-[7rem] px-[6%]'>
-        <VerticalCarousel lists={lists} />
+      <div className='mt-[7rem] px-[6%] grid grid-cols-11 gap-[33px]'>
+        <div className='col-span-5'>
+          <VerticalCarousel lists={lists} />
+        </div>
+        <div className="flex flex-col col-span-1 gap-10">
+          <div className="border-l-[1px] h-[225px]"></div>
+          <div>VS</div>
+          <div className="border-l-[1px] h-[225px]"></div>
+        </div>
+        <div className="col-span-5 bg-card-1 rounded-3xl">
+          <div className='flex flex-col px-8 py-12 gap-y-10'>
+              <div className="mx-auto bg-iphone1-pattern bg-no-repeat w-[314px] h-[288px]"></div>
+              <div className='flex flex-col'>
+              <span>Global accounts in minutes</span>
+              <span>FinanceFast solves problems by proving low fees, fast transfers, secure transactions, and a user-friendly platform.</span>
+              </div>
+          </div>
+        </div>
       </div>
 
     </div>
